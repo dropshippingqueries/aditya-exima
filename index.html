@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Exima - Premium Areca Products</title>
+    <meta name="description"
+        content="Exporter of high-quality Areca based products: Round plates, Square plates, Bowls, Compartment plates.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/favicon image logo.png">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">
+                <img src="Images/Logo-1.png" alt="Aditya Exima Logo" class="logo-img">
+                <span class="logo-text"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Scrollytelling Section -->
+        <section id="scrolly-section">
+            <div class="sticky-container">
+                <!-- Hidden video source for frame extraction -->
+                <video id="hero-video-src" muted playsinline preload="auto" style="display:none;">
+                    <source src="Final video.mp4" type="video/mp4">
+                </video>
+                <!-- Canvas for rendering extracted frames -->
+                <canvas id="hero-lightpass"></canvas>
+
+                <!-- Overlay Text Layers -->
+                <div class="scrolly-text" data-step="0">
+                    <h1>Eco-Friendly Elegance</h1>
+                    <p>Sustainable Nature</p>
+                </div>
+                <div class="scrolly-text" data-step="1">
+                    <h1>Built for Precision</h1>
+                    <p>Every detail, measured</p>
+                </div>
+                <div class="scrolly-text" data-step="2">
+                    <h1>Pure Quality</h1>
+                    <p>See what's inside</p>
+                </div>
+                <div class="scrolly-text" data-step="3">
+                    <h1>Ready for Export</h1>
+                    <a href="#products" class="cta-button">Explore Products</a>
+                </div>
+
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div class="arrow-scroll">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <!-- Loader -->
+                <div class="scrolly-loader">
+                    <div class="spinner"></div>
+                    <p>Loading Experience...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Who We Are</h2>
+                <div class="about-content scroll-reveal">
+                    <p>Aditya Exima is a sustainable export company specializing in premium areca leaf–based products
+                        such as plates, bowls, and tableware. We are committed to delivering eco-friendly alternatives
+                        that combine natural aesthetics with global quality standards.</p>
+                    <p>Areca-based products are 100% biodegradable and compostable, making them an ideal replacement for
+                        plastic and paper disposables. By using areca products, we reduce plastic pollution, support
+                        sustainable farming, and promote a healthier planet—without compromising on strength, hygiene,
+                        or design.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <div class="container">
+                <h2 class="section-title scroll-reveal">Our Collections</h2>
+                <div class="products-scroll-container">
+
+                    <!-- Product 1 -->
+                    <div class="product-row scroll-reveal">
+                        <div class="product-info">
+                            <h3>Round Plates</h3>
+                            <p class="product-tagline">Timeless Elegance</p>
+                            <p class="product-description">Perfect for dining, serving main courses with elegance.
+                                Available in various sizes (6", 8", 10", 12"). Sturdy, leak-proof, and designed to make
+                                every meal a statement of sustainability.</p>
+                        </div>
+                        <div class="product-visual">
+                            <img src="Images/7inch-round-plate.png" alt="Round Areca Plate">
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-row reverse scroll-reveal">
+                        <div class="product-info">
+                            <h3>Square Plates</h3>
+                            <p class="product-tagline">Modern Geometry</p>
+                            <p class="product-description">A modern aesthetic for your table setting. Ideal for
+                                appetizers and desserts. Sharp edges and clean lines defining sophistication for
+                                contemporary events.</p>
+                        </div>
+                        <div class="product-visual">
+                            <img src="Images/8x8inch-square-plate.png" alt="Square Areca Plate">
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-row scroll-reveal">
+                        <div class="product-info">
+                            <h3>Bowls</h3>
+                            <p class="product-tagline">Deep & Durable</p>
+                            <p class="product-description">Deep and durable bowls suitable for soups, curries, and
+                                salads. Microwave safe and capable of holding hot liquids comfortably without
+                                compromising structural integrity.</p>
+                        </div>
+                        <div class="product-visual">
+                            <img src="Images/bowl.png" alt="Areca Bowl">
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-row reverse scroll-reveal">
+                        <div class="product-info">
+                            <h3>Compartment Plates</h3>
+                            <p class="product-tagline">Functional Design</p>
+                            <p class="product-description">Convenient partitioned plates for serving full meals with
+                                multiple sides. Ideal for catered events, buffets, and thali-style serving where variety
+                                meets convenience.</p>
+                        </div>
+                        <div class="product-visual">
+                            <img src="Images/2-sections.png" alt="Compartment Areca Plate">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section parallax-section-footer">
+            <div class="container contact-content scroll-reveal">
+                <h2 class="section-title">Get In Touch</h2>
+                <h1 style="color: white;">Interested in our products? Contact us for export inquiries.</h1>
+                <div class="contact-details">
+                    <p>Email: info@adityaexima.in</p>
+                    <p>Phone: +91 9444146404</p>
+                    <p>Address: 384/27 Mint street, Sri complex, Chennai-79, Tamil Nadu, India</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <!-- Smooth Scrolling -->
+    <!-- Smooth Scrolling Library Removed for Performance -->
+    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> -->
+
+    <script src="scrollytelling.js" defer></script>
+    <script src="main.js" defer></script>
+</body>
+
+</html>

@@ -367,13 +367,13 @@ header.header-scrolled .logo-img {
         color: #7ed67e;
     }
 
-    /* Center products on mobile */
+    /* Show more of the image on mobile */
     .slide-1 .hero-slide-img {
-        object-position: center center;
+        object-position: 25% 70%;
     }
 
     .slide-2 .hero-slide-img {
-        object-position: center center;
+        object-position: 75% 70%;
     }
 
     .hero-cta {

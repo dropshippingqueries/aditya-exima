@@ -12,6 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="Images/favicon.png">
+
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+
+    <!-- Lenis Smooth Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.css">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js" defer></script>
 </head>
 
 <body>
@@ -39,51 +47,34 @@
     </header>
 
     <main>
-        <!-- Scrollytelling Section -->
-        <section id="scrolly-section">
-            <div class="sticky-container">
-                <!-- Hidden video source for frame extraction -->
-                <video id="hero-video-src" muted playsinline preload="auto" style="display:none;">
-                    <source src="Final video.mp4" type="video/mp4">
-                </video>
-                <!-- Canvas for rendering extracted frames -->
-                <canvas id="hero-lightpass"></canvas>
+        <!-- GSAP Scrollytelling Hero Section -->
+        <section id="gsap-hero-section">
+            <div class="hero-pin-container">
 
-                <!-- Overlay Text Layers -->
-                <div class="scrolly-text" data-step="0">
-                    <h1>Eco-Friendly Elegance</h1>
-                    <p>Sustainable Nature</p>
-                </div>
-                <div class="scrolly-text" data-step="1">
-                    <h1>Built for Precision</h1>
-                    <p>Every detail, measured</p>
-                </div>
-                <div class="scrolly-text" data-step="2">
-                    <h1>Pure Quality</h1>
-                    <p>See what's inside</p>
-                </div>
-                <div class="scrolly-text" data-step="3">
-                    <h1>Ready for Export</h1>
-                    <a href="#products" class="cta-button">Explore Products</a>
-                </div>
+                <!-- Image 1: Raw Areca Leaves (fullscreen) -->
+                <div class="hero-slide slide-1">
+                    <img src="Images/UPD3.png" alt="Raw Areca Leaves" class="hero-slide-img">
+                    <div class="hero-text hero-text-1">
+                        <h1>From <span class="highlight-leaf">nature's</span> fallen leaf...</h1>
 
-                <!-- Scroll Indicator -->
-                <div class="scroll-indicator">
-                    <div class="mouse">
-                        <div class="wheel"></div>
-                    </div>
-                    <div class="arrow-scroll">
-                        <span></span>
-                        <span></span>
-                        <span></span>
                     </div>
                 </div>
 
-                <!-- Loader -->
-                <div class="scrolly-loader">
-                    <div class="spinner"></div>
-                    <p>Loading Experience...</p>
+                <!-- Image 2: Finished Tableware (fullscreen) -->
+                <div class="hero-slide slide-2">
+                    <img src="Images/UPD4.png" alt="Finished Areca Tableware" class="hero-slide-img">
+                    <div class="hero-text hero-text-2">
+                        <h1>…to export-ready<br><span class="highlight-gold">areca tableware.</span></h1>
+                        <a href="#products" class="hero-cta">Explore Our Products</a>
+                    </div>
                 </div>
+
+                <!-- Scroll Prompt -->
+                <div class="scrolly-scroll-prompt">
+                    <div class="scroll-line"></div>
+                    <span>Scroll</span>
+                </div>
+
             </div>
         </section>
 
@@ -181,10 +172,6 @@
     </main>
 
 
-
-    <!-- Smooth Scrolling -->
-    <!-- Smooth Scrolling Library Removed for Performance -->
-    <!-- <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script> -->
 
     <script src="scrollytelling.js" defer></script>
     <script src="main.js" defer></script>
